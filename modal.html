@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Modal</h1>
+    </header>
+
+    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exemplo-modal">
+        Menu
+    </button>
+
+    <div class="modal fade" id="exemplo-modal" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Título da Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-modal">
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required>
+
+                        <label for="tel">Telefone: </label>
+                        <input type="tel" name="tel" id="tel" class="form-control" placeholder="Digite seu telefone" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="form-modal" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="success-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Pré-cadastro enviado com sucesso!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Obrigado por enviar o formulário. Entraremos em contanto em breve!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/script.js"></script>
+</body>
+</html>
