@@ -12,13 +12,28 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-body header {
-    background-color: #0080ff;
-    color: white;
-    padding: 20px 0;
-}
-
 body button {
     margin-top: 8px;
     margin-left: 8px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+section {
+    height: 100vh;
+    background-color: rgb(171, 200, 201);
+    padding-top: 220px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
 }
