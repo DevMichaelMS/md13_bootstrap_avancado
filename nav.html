@@ -32,6 +32,7 @@
                     </ul>
                 </div>
             </nav>
+            <button id="btn-checar-emails" type="button" class="btn btn-warning"> Checar caixa de mensagens</button>
         </div>
     </header>
 
@@ -41,6 +42,82 @@
         </section>
         <section id="produtos">
             <h2>Produtos</h2>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Masculina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Feminina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Fitness</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba4" class="nav-link" type="button">Oversize</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-content">
+                        <div class="tab-pane active col-4" id="aba1">
+                            <article class="card text-bg-dark">
+                                <header class="card-header">
+                                    EmoCat
+                                </header>
+                                <img src="img/1.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle">Título do Card</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Saiba mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em: <time>29/03/2025 às 23:54:00</time>
+                                </footer>
+                            </article>
+                        </div>
+                        <div class="tab-pane active col-4" id="aba2">
+                            <article class="card text-bg-dark">
+                                <header class="card-header">
+                                    EmoCat
+                                </header>
+                                <img src="img/2.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle">Título do Card</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Saiba mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em: <time>29/03/2025 às 23:54:00</time>
+                                </footer>
+                            </article>
+                        </div>
+                        <div class="tab-pane active col-4" id="aba3">
+                            <article class="card text-bg-dark">
+                                <header class="card-header">
+                                    EmoCat
+                                </header>
+                                <img src="img/3.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle">Título do Card</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Saiba mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em: <time>29/03/2025 às 23:54:00</time>
+                                </footer>
+                            </article>
+                        </div>
+                        <div class="tab-pane active col-4" id="aba4">
+                            <article class="card text-bg-dark">
+                                <header class="card-header">
+                                    EmoCat
+                                </header>
+                                <img src="img/4.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle">Título do Card</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Saiba mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em: <time>29/03/2025 às 23:54:00</time>
+                                </footer>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="promocoes">
             <h2>Promoções</h2>
@@ -49,6 +126,21 @@
             <h2>Contato</h2>
         </section>
     </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div data-bs-autohide="false" class="toast" id="msg-alert">
+            <header class="toast-header">
+                <strong>IMPORTANTE</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 10 mensagens não lidas.
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-danger" type="button">Ignorar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="lib/bootstrap.bundle.min.js"></script>
     <script src="lib/script.js"></script>
 </body>
