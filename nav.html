@@ -32,6 +32,7 @@
                     </ul>
                 </div>
             </nav>
+            <button id="btn-checar-emails" type="button" class="btn btn-warning"> Checar caixa de mensagens</button>
         </div>
     </header>
 
@@ -125,6 +126,21 @@
             <h2>Contato</h2>
         </section>
     </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div data-bs-autohide="false" class="toast" id="msg-alert">
+            <header class="toast-header">
+                <strong>IMPORTANTE</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 10 mensagens não lidas.
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-danger" type="button">Ignorar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="lib/bootstrap.bundle.min.js"></script>
     <script src="lib/script.js"></script>
 </body>
